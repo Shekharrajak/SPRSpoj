@@ -3,7 +3,9 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char** argv) {
-	int n;
+	int n,k=10;
+	while(k--){
+	
 	scanf("%d",&n);
 	int add;
 	scanf("%d",&add);
@@ -12,5 +14,6 @@ int main(int argc, char** argv) {
 	temp/=2;
 	printf("%d\n%d",temp+add,temp);
 	
+}
 	return 0;
 }
