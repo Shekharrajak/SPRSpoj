@@ -34,6 +34,7 @@ int main()
 	/* print a float, default precision is 6 places */
 	printf("%f\n", f);
 	/* input a double precision floating point number */
+	
 	scanf("%lf", &d);
 	/* print a double, default precision is 6 places */
 	printf("%f\n", d);
