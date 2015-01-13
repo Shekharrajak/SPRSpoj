@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
 		m2=i-1;
 		sort(gd,gd+a);
 		sort(gd,gd+b);
-		if(m1>m2){
+		if(gd[m1]>=mgd[m2]){
 			printf("Godzilla\n");
 		}
 		else{
@@ -32,3 +32,33 @@ int main(int argc, char** argv) {
 	}
 	return 0;
 }
+
+/*
+
+
+#include<stdio.h>
+#include<algorithm>
+using namespace std;
+int main()
+{
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        int g,mg;
+        scanf("%d%d",&g,&mg);
+        int i,god[g],mech[mg];
+        for(i=0;i<g;i++)
+            scanf("%d",&god[i]);
+        for(i=0;i<mg;i++)
+             scanf("%d",&mech[i]);
+        sort(god,god+g);
+        sort(mech,mech+mg);
+        if(god[g-1]>=mech[mg-1])
+            printf("Godzilla\n");
+        else
+            printf("MechaGodzilla\n");
+    }
+}
+
+*/
