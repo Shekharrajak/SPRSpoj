@@ -29,7 +29,7 @@ int calc(int i) {
         }
     }
     //cout<<i<<endl;
-    return m[i];
+    return m[i];//i=0 at the end ..interesting right .
 }
  
 int main() {
