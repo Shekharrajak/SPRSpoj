@@ -1,15 +1,15 @@
-# Project: absys
+# Project: Reversing the string sentence word
 # Makefile created by Dev-C++ 5.7.1
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = absys.o
-LINKOBJ  = absys.o
+OBJ      = "reversing\ the\ string\ sentence\ word.o"
+LINKOBJ  = "reversing the string sentence word.o"
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
-BIN      = absys.exe
+BIN      = "Reversing the string sentence word.exe"
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -24,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-absys.o: absys.cpp
-	$(CPP) -c absys.cpp -o absys.o $(CXXFLAGS)
+"reversing\ the\ string\ sentence\ word.o": reversing\ the\ string\ sentence\ word.cpp
+	$(CPP) -c "reversing the string sentence word.cpp" -o "reversing the string sentence word.o" $(CXXFLAGS)
