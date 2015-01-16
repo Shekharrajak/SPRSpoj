@@ -1,3 +1,4 @@
+//not working
 #include <iostream>
 #include<cstdio>
 #include<map>
@@ -6,19 +7,32 @@ map<int,int> cards;
 
 
 int level(int n, int clevel){
-		if(n==0){
-		return (  cards[n] +3 -(clevel)) ;
-	}
 	
-	else if(cards.count(n)){
+	if(k!=clevel-1){
+		return (3*clevel) ;
+		
+		
+		}
+		else if(k==clevel-1){
+			return (-clevel);
+		}	
+	else  if(cards.count(n)){
 			return cards[n];
 		}
+		
+		
 		else{
 			
 			
-			cards[n]=3*(clevel) + level(n-1,++clevel);
-			
+			cards[n]=3*(clevel) + level(n-1,n,++clevel);
+		
+	
 		}
+		else if(n==0){
+			return cards[k];
+		}
+			
+		
 	
 }
 int main(int argc, char** argv) {
@@ -27,7 +41,7 @@ int main(int argc, char** argv) {
 	while(n--){
 		int k;
 		scanf("%d",&k);
-		printf("%d\n",level(k,1));
+		printf("%d\n",level(k,k));
 	}
 	return 0;
 }
