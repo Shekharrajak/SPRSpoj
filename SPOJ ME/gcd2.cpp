@@ -23,7 +23,7 @@ continue;
 int len=strlen(b);
 for(i=0,num=0;i<len;i++){
 num=(num*10+(b[i]-'0'))%a;
-cout<<num<<" ";
+//cout<<num<<" ";
 }
 cout<<endl;
 /*
