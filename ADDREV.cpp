@@ -7,6 +7,7 @@ int rev(int k){
 		// r =r*10;
 		r=r*10+k%10;
 		k/=10;
+		
 	}
 	return r;
 }
