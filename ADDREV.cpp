@@ -5,6 +5,7 @@ int rev(int k){
 	int r=0;
 	for(;k!=0;){
 		// r =r*10;
+		
 		r=r*10+k%10;
 		k/=10;
 		
