@@ -3,6 +3,6 @@
 
 int main() {
     const void* res = memchr("Syshsh Pavlik", 'p', 16);
-     printf("%p\n", res);  // uncomment this line and see what happens
+     printf("%p\n", res);  // uncomment this line and see what happens,ifit is commented.
     return !*(int*)res;
 }
