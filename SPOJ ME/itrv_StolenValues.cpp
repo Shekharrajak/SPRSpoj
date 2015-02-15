@@ -5,7 +5,8 @@ using namespace std;
 
 int maxValue(int n){
 	int value1;
-	int value2;int temp;
+	int value2;
+	int temp;
 	if(n==0){
 	return 0;
 	}
